@@ -44,6 +44,15 @@ public class PlayerController : MonoBehaviour
     public AudioClip throwSound;
     private AudioSource audioSource;
 
+    [Header("Crouch Settings")]
+    public float crouchHeight = 1f;
+    public float crouchSpeed = 2.5f;
+    private float standHeight;
+    private Vector3 standCenter;
+    private Vector3 standingCameraLocalPos;
+    private Vector3 crouchingCameraLocalPos;
+    private bool isCrouching = false;
+
     private CharacterController controller;
     private Camera playerCamera;
     private Vector3 velocity;
@@ -54,6 +63,14 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         playerCamera = GetComponentInChildren<Camera>();
         audioSource = GetComponent<AudioSource>();
+
+        standHeight = controller.height;
+        standCenter = controller.center;
+        standingCameraLocalPos = playerCamera.transform.localPosition;
+        crouchingCameraLocalPos = new Vector3(
+            standingCameraLocalPos.x,
+            standingCameraLocalPos.y - (standHeight - crouchHeight) / 2f - 0.3f,
+            standingCameraLocalPos.z);
         if (audioSource == null)
             audioSource = gameObject.AddComponent<AudioSource>();
         currentStamina = maxStamina;
@@ -78,6 +95,7 @@ public class PlayerController : MonoBehaviour
     {
         HandleCamera();
         HandleMovement();
+        HandleCrouch();
         HandlePickup();
         HandleStamina();
         CheckForPickableObjects();
@@ -105,9 +123,9 @@ public class PlayerController : MonoBehaviour
         float moveZ = Input.GetAxis("Vertical");
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
 
-        // Determine sprint
-        bool wantsToSprint = Input.GetKey(KeyCode.LeftShift) && canSprint && move.magnitude > 0.1f;
-        float speed = wantsToSprint ? sprintSpeed : walkSpeed;
+        // Determine sprint (disabled while crouching or in the air)
+        bool wantsToSprint = Input.GetKey(KeyCode.LeftShift) && canSprint && move.magnitude > 0.1f && !isCrouching && isGrounded;
+        float speed = isCrouching ? crouchSpeed : (wantsToSprint ? sprintSpeed : walkSpeed);
 
         controller.Move(move * speed * Time.deltaTime);
 
@@ -125,6 +143,34 @@ public class PlayerController : MonoBehaviour
             {
                 currentStamina = 0;
                 canSprint = false; // stop sprinting until full
+            }
+        }
+    }
+
+    void HandleCrouch()
+    {
+        bool ctrlHeld = Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl);
+
+        if (ctrlHeld && !isCrouching)
+        {
+            isCrouching = true;
+            controller.height = crouchHeight;
+            // Keep capsule bottom at same floor level
+            float crouchCenterY = (standCenter.y - standHeight / 2f) + crouchHeight / 2f;
+            controller.center = new Vector3(standCenter.x, crouchCenterY, standCenter.z);
+            playerCamera.transform.localPosition = crouchingCameraLocalPos;
+        }
+        else if (!ctrlHeld && isCrouching)
+        {
+            // Raycast from just above the crouched capsule top to check for ceiling
+            Vector3 rayOrigin = transform.position + Vector3.up * (crouchHeight + 0.05f);
+            float checkDistance = standHeight - crouchHeight - 0.05f;
+            if (checkDistance <= 0f || !Physics.Raycast(rayOrigin, Vector3.up, checkDistance))
+            {
+                isCrouching = false;
+                controller.height = standHeight;
+                controller.center = standCenter;
+                playerCamera.transform.localPosition = standingCameraLocalPos;
             }
         }
     }
