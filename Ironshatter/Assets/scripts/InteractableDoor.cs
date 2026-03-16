@@ -1,30 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
 
 public class InteractableDoor : MonoBehaviour
 {
     [Header("Door Settings")]
-    public float openAngle = 90f; // degrees to open from closed
-    public float openSpeed = 120f; // degrees per second
-    public Transform hinge; // optional transform representing hinge position
+    public float openAngle = 90f; 
+    public float openSpeed = 120f; 
+    public Transform hinge; 
 
     [Header("Door Sounds")]
     [SerializeField] private AudioClip doorOpenSound;
     [SerializeField] private AudioClip doorCloseSound;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private GameObject key;
+    [SerializeField] GameObject player;
 
+    private PlayerController controller;
     bool isOpen = false;
     bool rotating = false;
-    float rotatedSoFar = 0f; // degrees rotated from closed position (0..openAngle)
+    float rotatedSoFar = 0f; 
     float remainingAngle = 0f;
-    int rotationDirection = 1; // 1 = opening (positive), -1 = closing
+    int rotationDirection = 1; 
 
     Vector3 hingePosition;
     Vector3 hingeAxis;
 
     void Start()
     {
+        controller = player.GetComponent<PlayerController>();
+
         if (audioSource == null)
             audioSource = GetComponent<AudioSource>();
 
@@ -35,7 +41,6 @@ public class InteractableDoor : MonoBehaviour
         }
         else
         {
-            // Fallback hinge: approximate one side of the door using local right
             float halfWidth = 0.5f * Mathf.Max(transform.localScale.x, 0.001f);
             hingePosition = transform.position - transform.right * halfWidth;
             hingeAxis = transform.up;
@@ -66,16 +71,19 @@ public class InteractableDoor : MonoBehaviour
     // Toggle door open/close
     public void Interact()
     {
-        // If not currently rotating, start opening or closing depending on state
+        if (controller.heldObject == key) {
         if (!rotating)
         {
+            
             if (!isOpen)
             {
                 rotationDirection = 1;
                 remainingAngle = openAngle;
                 rotatedSoFar = 0f;
                 PlaySound(doorOpenSound);
-            }
+                Debug.Log(controller.heldObject == key);
+                    Destroy(key);
+                }
             else
             {
                 rotationDirection = -1;
@@ -85,42 +93,20 @@ public class InteractableDoor : MonoBehaviour
             }
             rotating = true;
             return;
-        }
-
-        // If rotating, reverse direction and set remaining based on how far we've rotated
+            }
+    }
         if (rotationDirection == 1)
         {
-            // was opening, now close back to 0
             rotationDirection = -1;
             remainingAngle = rotatedSoFar;
             PlaySound(doorCloseSound);
         }
         else
         {
-            // was closing, now open to openAngle
             rotationDirection = 1;
             remainingAngle = openAngle - rotatedSoFar;
             PlaySound(doorOpenSound);
         }
-    }
-
-    // Convenience methods
-    public void Open()
-    {
-        if (isOpen) return;
-        rotationDirection = 1;
-        remainingAngle = openAngle - rotatedSoFar;
-        rotating = true;
-        PlaySound(doorOpenSound);
-    }
-
-    public void Close()
-    {
-        if (!isOpen) return;
-        rotationDirection = -1;
-        remainingAngle = rotatedSoFar;
-        rotating = true;
-        PlaySound(doorCloseSound);
     }
 
     private void PlaySound(AudioClip clip)

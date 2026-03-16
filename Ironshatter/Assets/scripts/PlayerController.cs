@@ -177,71 +177,81 @@ public class PlayerController : MonoBehaviour
 
     void HandlePickup()
     {
+        // ===== E — pouze sebrání / interakce =====
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (heldObject == null)
+            RaycastHit hit;
+            if (Physics.Raycast(playerCamera.transform.position,
+                                playerCamera.transform.forward,
+                                out hit,
+                                interactDistance,
+                                interactLayer))
             {
-                RaycastHit hit;
-                if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, interactDistance, interactLayer))
+                //  Dveøe
+                InteractableDoor hitDoor = hit.collider.GetComponent<InteractableDoor>();
+                if (hitDoor != null)
                 {
-                    // Prefer component-based interaction: doors
-                    InteractableDoor hitDoor = hit.collider.GetComponent<InteractableDoor>();
-                    if (hitDoor != null)
-                    {
-                        heldObject = null; // ensure we don't pick up when interacting with door
-                        hitDoor.Interact();
-                    }
-                    // Check for Pickable objects
-                    else if (hit.collider.CompareTag("Pickable"))
-                    {
-                        heldObject = hit.collider.gameObject;
-                        Rigidbody rb = heldObject.GetComponent<Rigidbody>();
-                        if (rb != null) rb.isKinematic = true;
+                    hitDoor.Interact();
+                    return;
+                }
 
-                        // Scale down slightly
-                        originalScale = heldObject.transform.localScale;
-                        heldObject.transform.localScale = originalScale * 0.7f;
+                //  Truhla
+                ChestUse hitChest = hit.collider.GetComponent<ChestUse>();
+                if (hitChest != null)
+                {
+                    hitChest.Interact();
+                    return;
+                }
 
-                        // Parent to hold position
-                        heldObject.transform.SetParent(holdPosition);
+                //  Pickable objekt
+                if (hit.collider.CompareTag("Pickable"))
+                {
+                    heldObject = hit.collider.gameObject;
 
-                        // Move closer to camera: change localPosition Z
-                        heldObject.transform.localPosition = new Vector3(0f, -0.1f, -0.1f); // 0.2 units in front of camera
-                        heldObject.transform.localRotation = Quaternion.identity;
-                        heldObject.transform.localRotation = Quaternion.Euler(0f, 230f, 0f);
+                    Rigidbody rb = heldObject.GetComponent<Rigidbody>();
+                    if (rb != null) rb.isKinematic = true;
 
-                        // Play pickup sound
-                        if (pickupSound != null && audioSource != null)
-                            audioSource.PlayOneShot(pickupSound);
-                    }
-                    // Check for Interactable objects (fallback)
-                    else if (hit.collider.CompareTag("Interactable"))
-                    {
-                        GameObject interactableObject = hit.collider.gameObject;
-                        Animator animator = interactableObject.GetComponent<Animator>();
-                        if (animator != null)
-                        {
-                            animator.SetTrigger("Interact");
-                        }
-                    }
+                    originalScale = heldObject.transform.localScale;
+                    heldObject.transform.localScale = originalScale * 0.7f;
+
+                    heldObject.transform.SetParent(holdPosition);
+                    heldObject.transform.localPosition = new Vector3(0f, -0.1f, -0.1f);
+                    heldObject.transform.localRotation = Quaternion.Euler(0f, 230f, 0f);
+
+                    if (pickupSound && audioSource)
+                        audioSource.PlayOneShot(pickupSound);
+
+                    return;
+                }
+
+                //  Ostatní interakce
+                if (hit.collider.CompareTag("Interactable"))
+                {
+                    Animator animator = hit.collider.GetComponent<Animator>();
+                    if (animator != null)
+                        animator.SetTrigger("Interact");
                 }
             }
-            else DropObject();
+        }
+
+        if (Input.GetMouseButtonDown(1) && heldObject != null)
+        {
+            DropObject();
         }
 
         if (Input.GetMouseButtonDown(0) && heldObject != null)
         {
             Rigidbody rb = heldObject.GetComponent<Rigidbody>();
-            // Play throw sound before dropping
-            if (throwSound != null && audioSource != null)
+
+            if (throwSound && audioSource)
                 audioSource.PlayOneShot(throwSound);
+
             DropObject();
+
             if (rb != null)
                 rb.AddForce(playerCamera.transform.forward * throwForce, ForceMode.Impulse);
         }
     }
-
-
     void DropObject()
     {
         if (heldObject != null)
@@ -266,7 +276,7 @@ public class PlayerController : MonoBehaviour
             if (currentStamina >= maxStamina)
             {
                 currentStamina = maxStamina;
-                canSprint = true; // now sprinting is allowed again
+                canSprint = true; 
             }
         }
 

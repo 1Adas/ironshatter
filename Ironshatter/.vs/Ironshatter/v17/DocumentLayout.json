@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|c:\\users\\adelk\\onedrive\\dokumenty\\github\\ironshatter\\ironshatter\\assets\\scripts\\exit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\exit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\assets\\scripts\\bookscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bookscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|c:\\users\\adelk\\onedrive\\dokumenty\\github\\ironshatter\\ironshatter\\assets\\zvuky\\haywalksound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|solutionrelative:assets\\zvuky\\haywalksound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\assets\\zvuky\\chestsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|solutionrelative:assets\\zvuky\\chestsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\DoorSound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Zvuky\\DoorSound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\assets\\scripts\\chestuse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chestuse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\assets\\scripts\\interactabledoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactabledoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|c:\\users\\adelk\\onedrive\\dokumenty\\github\\ironshatter\\ironshatter\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\assets\\scripts\\end.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\end.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\assets\\scripts\\bookscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bookscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\DoorSound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Zvuky\\DoorSound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\assets\\zvuky\\haywalksound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|solutionrelative:assets\\zvuky\\haywalksound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\assets\\zvuky\\chestsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D6A6EFA-2B65-E3ED-FEC0-03482781543A}|Assembly-CSharp.csproj|solutionrelative:assets\\zvuky\\chestsound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\LockSound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +74,124 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Exit.cs",
+              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\Exit.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Exit.cs",
+              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\Exit.cs",
+              "RelativeToolTip": "Assets\\scripts\\Exit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T21:10:55.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChestUse.cs",
+              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\ChestUse.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\ChestUse.cs",
+              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\ChestUse.cs",
+              "RelativeToolTip": "Assets\\scripts\\ChestUse.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T20:20:01.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "HayWalkSound.cs",
+              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\HayWalkSound.cs",
+              "RelativeDocumentMoniker": "Assets\\Zvuky\\HayWalkSound.cs",
+              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\HayWalkSound.cs",
+              "RelativeToolTip": "Assets\\Zvuky\\HayWalkSound.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T15:38:11.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DoorSound.cs",
+              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\DoorSound.cs",
+              "RelativeDocumentMoniker": "Assets\\Zvuky\\DoorSound.cs",
+              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\DoorSound.cs",
+              "RelativeToolTip": "Assets\\Zvuky\\DoorSound.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T15:27:05.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookScript.cs",
+              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\BookScript.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\BookScript.cs",
+              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\BookScript.cs",
+              "RelativeToolTip": "Assets\\scripts\\BookScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T19:31:28.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "End.cs",
+              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\End.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\End.cs",
+              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\End.cs",
+              "RelativeToolTip": "Assets\\scripts\\End.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T18:06:33.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\scripts\\PlayerController.cs",
+              "ViewState": "AgIAADIBAAAAAAAAAAAswBYBAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T11:50:26.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InteractableDoor.cs",
+              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\InteractableDoor.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\InteractableDoor.cs",
+              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\InteractableDoor.cs",
+              "RelativeToolTip": "Assets\\scripts\\InteractableDoor.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAgwGAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T11:48:18.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChestSound.cs",
+              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\ChestSound.cs",
+              "RelativeDocumentMoniker": "Assets\\Zvuky\\ChestSound.cs",
+              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\ChestSound.cs",
+              "RelativeToolTip": "Assets\\Zvuky\\ChestSound.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAuwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T15:40:07.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "LockSound.cs",
               "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\LockSound.cs",
               "RelativeDocumentMoniker": "Assets\\Zvuky\\LockSound.cs",
@@ -75,93 +200,6 @@
               "ViewState": "AgIAACoAAAAAAAAAAAAuwE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T15:46:19.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ChestSound.cs",
-              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\ChestSound.cs",
-              "RelativeDocumentMoniker": "Assets\\Zvuky\\ChestSound.cs",
-              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\ChestSound.cs",
-              "RelativeToolTip": "Assets\\Zvuky\\ChestSound.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAuwFUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T15:40:07.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HayWalkSound.cs",
-              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\HayWalkSound.cs",
-              "RelativeDocumentMoniker": "Assets\\Zvuky\\HayWalkSound.cs",
-              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\HayWalkSound.cs",
-              "RelativeToolTip": "Assets\\Zvuky\\HayWalkSound.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAuwFsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T15:38:11.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DoorSound.cs",
-              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\DoorSound.cs",
-              "RelativeDocumentMoniker": "Assets\\Zvuky\\DoorSound.cs",
-              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\Zvuky\\DoorSound.cs",
-              "RelativeToolTip": "Assets\\Zvuky\\DoorSound.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAkwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T15:27:05.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookScript.cs",
-              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\BookScript.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\BookScript.cs",
-              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\BookScript.cs",
-              "RelativeToolTip": "Assets\\scripts\\BookScript.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADsAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T19:31:28.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "End.cs",
-              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\End.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\End.cs",
-              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\End.cs",
-              "RelativeToolTip": "Assets\\scripts\\End.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T18:06:33.417Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\scripts\\PlayerController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAqwEcAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T11:50:26.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InteractableDoor.cs",
-              "DocumentMoniker": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\InteractableDoor.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\InteractableDoor.cs",
-              "ToolTip": "C:\\Users\\adelk\\OneDrive\\Dokumenty\\GitHub\\ironshatter\\Ironshatter\\Assets\\scripts\\InteractableDoor.cs",
-              "RelativeToolTip": "Assets\\scripts\\InteractableDoor.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAuwIMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-09T11:48:18.681Z"
             }
           ]
         }
